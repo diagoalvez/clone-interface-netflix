@@ -1,0 +1,16 @@
+@media  screen and (max-width:700px) {/*Criando condições para responsividade. Ajustando a tela quando quando ela tiver no máximo 700px*/
+    header .container{
+        display: flex;
+        flex-direction: column;/*Movimentar elemento para baixo, ao invés de ficar na mesma linha*/
+    }
+    .botao{
+        margin-top: 5px;
+        width: 250px;
+    }
+}
+
+@media screen and (min-width:1000){
+    .descricao{
+        width:50%;
+    }
+}

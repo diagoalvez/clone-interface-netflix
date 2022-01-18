@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Criação padrão html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css"><!--Relacionar folha de estilo css a documento html-->
+   
+    <link rel="stylesheet" href="styles/responsive.css">
+
+   <!--Linkar owl css-->
+   <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+   <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+
+
+
+    <title>SAINTFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container"> <!--Trabalhando com blocos, as divs-->
+           <!-- <h2 class="logo">SAINTFLIX</h2>  --> 
+           <img class="imglogo" src="img/logo3.png">
+            <nav class="nav1">
+                <a href="index.html">Início</a>
+                <a href="a">Séries</a>
+                <a href="a">Filmes</a>
+                <a href="a">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main> <!--Conceito de Div. Caixa principal-->
+        <div class="filmeprincipal">
+            <div class="container"> <!--wreaper-->
+                <h3 class="titulo">O HOMEM QUE SE TORNOU PAPA</h3>
+                <p class="descricao">Aos 18 anos, o jovem polonês Karol Wojtyla (Piotr Adamczyk) dedicava-se aos estudos e ao desejo de ser ator e escritor. Mas quando as consequências da Segunda Guerra Mundial passam a assombrar seu país, com a invasão das tropas nazistas, Karol presencia os horrores de um povo cruelmente perseguido e destruído. Diante de tanta dor, decide se tornar padre e ajudar àqueles que precisam. Tem início sua jornada rumo à devoção e à esperança.</p>
+                <div class="botoes">
+                   <a href="o-homem-que-se-tornou-papa.html">
+                    <button role="button" class="botao"> <!--Ratificar a função de um botao com 'role', para diferentes dispositivos-->
+                        <i class="fas fa-play-circle"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    </a>
+                    
+                        <button role="button" class="botao">
+                            <i class="fas fa-info-circle"></i> <!--ìcone para o botão. copiado diretamente do site  FONTAWESOME-->
+                            MAIS INFORMAÇÕES
+                        </button>
+                    
+                    
+                </div>
+            </div>
+        </div> <!--escrever div.nomedaclasse. prrenche automaticamente-->
+        
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme"> <!--Classe para chamar o carrosel, nome padrão do site. A classe é chamada no setup.js-->
+            <div class="item">
+                <a href="irmao-sol-irma-irma-lua.html">
+                  <img class="box-filme" src="img/min1.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="joana-darc.html">
+                    <img class="box-filme" src="img/min2.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="santa-faustina.html">
+                    <img class="box-filme" src="img/min3.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="santa-teresinha-do-menino-jesus.html">
+                    <img class="box-filme" src="img/min4.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="santa-teresa-de-los-andes.html">
+                    <img class="box-filme" src="img/min5.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="santo-antonio-de-padua.html">
+                    <img class="box-filme" src="img/min6.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="moscati.html">
+                  <img class="box-filme" src="img/min7.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="fatima.html">
+                    <img class="box-filme" src="img/min8.jpg" alt="" srcset=""> 
+                </a>
+            </div>
+            <div class="item">
+                <a HREF="padre-pio.html">
+                    <img class="box-filme" src="img/min9.jpg" alt="" srcset="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="sao-maximiliano-kolbe.html">
+                    <img class="box-filme" src="img/min10.jpg" alt="" srcset="">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+   <!-- <footer>
+        <div class="rodape">
+            Desenvolvido por Diago Alves
+        </div>
+
+    </footer> --> 
+   <!--Por boas práticas sempre declarar os scripts JS no fim do body. Primeiro se carrega os elemntos, após isso as funcionalidades descritas no js-->
+    <script src="https://kit.fontawesome.com/e7aae42f6b.js" crossorigin="anonymous"></script> <!--Link enviado pelo próprio site quando se usa algum icone. Caminhos dos ícones são diferentes-->
+    <!--Caminhos dos arquivos em JS para realizar o carrosel. Padrão do OWLCAROUSEL-->
+    <script src="js/owl/jquery.min.js"></script> 
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+:root{ /*Declara variáveis em todo o documento*/
+    --vermelho: #E50914 ;/*Quando as cores forem claras*/
+    --preta: #141414 ; /*Especificar como variável, facilita na hora de trocar*/
+
+
+}
+
+
+*{ /*reseta CSS o asterisco comporta toda a página*/
+    margin:0;
+    padding: 0; /* espaçamento entre box*/
+    box-sizing: border-box; /* para os elementos caberem na caixa*/
+}
+
+/*Filme principal*/
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif; /*Google fontes, pesquisar*/
+    color:white;
+    
+}
+
+header .container{ /*acessa container dentro do header*/
+    display:flex; /*maneira de alinha elementos em tela*/
+    flex-direction: row; /*Default, ajusta elemento à linha de maneira vertical*/
+    align-items: center; /*Alinha elementos*/
+    justify-content:space-between; /*Elementos em fora horizontal. Espaço entre os elementos*/
+    
+    
+}
+
+header .logo{ /*Acessa classe dentro do header*/
+    margin-left: 5px; /*Espaço à esquerda*/
+    color: var(--vermelho); /*chama a variáveis criada acima*/
+    font-family: 'Arial Black', Times;/*Depois da fonte principal, segunda opção de exibição para o navegador*/
+    font-size: 40px; /*Tamanho da fonte*/
+}
+
+header nav a{ /*elemento A dentro de Nav*/
+    text-decoration: none; /*Remove a linha abaixo do texto*/
+    color:#AAA; /*cor do texto*/
+    margin-right: 10px; /*Distanciamento de elemntos, no caso à direita*/
+}
+
+header nav a:hover{ /*Tipo de evento ao passar o mouse sobre o elemento*/
+    color:#FFF; /*Mudará de cor*/
+}
+.nav1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+.imglogo{
+    margin-top: 3px;
+    margin-bottom: 3px;
+       width: 220px;
+       height: auto;
+
+}
+/*Filme principal*/
+.botao:hover{
+    background-color: white;
+    /*colocar um gradiente no background*/
+    color:rgba(0,0,0,.50);
+
+    font-size: 12.5px;
+    
+
+}
+.filmeprincipal{/*Trabalhando a class em questão*/
+    font: size 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/karol.jpg'); /*Definindo imagem como bg/ Ferramenta gradiente, necessário utiilizar duas cores e transparência a ser utilizada*/
+    
+    height: 500px; /*Tamanho padrão da caixa, filmeprincipal*/
+    background-size:cover; /*propriedade que pega a área de cobertura*/
+
+    display:flex; /*Sempre para o padrão linha por default. O padrão das divs, o display é block*/ 
+    flex-direction: column; /*Ajustar e alinhar elementos*/
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+
+.filmeprincipal .descricao{
+    margin-top:10px;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS';
+   /* text-align: justify;*/
+}
+.filmeapresentado{/*Trabalhando a class em questão*/
+    font: size 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%); /*Definindo imagem como bg/ Ferramenta gradiente, necessário utiilizar duas cores e transparência a ser utilizada*/
+    
+    height: 200px; /*Tamanho padrão da caixa, filmeprincipal*/
+    background-size:cover; /*propriedade que pega a área de cobertura*/
+
+    display:flex; /*Sempre para o padrão linha por default. O padrão das divs, o display é block*/ 
+    flex-direction: column; /*Ajustar e alinhar elementos*/
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 5px;
+}
+.filmeapresentado .descricao{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS';
+}
+.tituloapresentado{
+    margin-top: 0px;/**posicionamento fluido em %*/
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* margin-left: 1%;*/
+}
+
+.titulo{
+    margin-top: 5%;/**posicionamento fluido em %*/
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* margin-left: 1%;*/
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px;/*Valor interno dos elementos. Quando passa só um elemento ele estabelece todas as dimensões. cima, baixo esq, dir,*/
+    margin-right: 15px;
+    font-size:12px;
+  
+    cursor: pointer;
+    transition: .3s ease all;
+} 
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.filmeprincipal .container{
+    width:65%;
+}
+
+.box-filme{
+    padding-top: 3%;
+    /*Tamanho da imagem. Total*/
+    height:100%;
+    width:100%;
+    display: block;
+
+}
+
+.botao2:hover{
+    height: 110%;
+    width: auto;
+    cursor:pointer;
+}
+/*
+.footer .rodape{
+    background-color: var(--preta);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: var(--vermelho);
+    padding: 5px;
+    justify-content: center;
+}
+*/

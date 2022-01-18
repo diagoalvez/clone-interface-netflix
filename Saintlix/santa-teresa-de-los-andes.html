@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!--Criação padrão html -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css"><!--Relacionar folha de estilo css a documento html-->
+   
+    <link rel="stylesheet" href="styles/responsive.css">
+
+   <!--Linkar owl css-->
+   <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+   <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+
+
+
+    <title>SAINTFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container"> <!--Trabalhando com blocos, as divs-->
+           <!-- <h2 class="logo">SAINTFLIX</h2>  --> 
+           <img class="imglogo" src="img/logo3.png">
+            <nav class="nav1">
+                <a href="index.html">Início</a>
+                <a href="a">Séries</a>
+                <a href="a">Filmes</a>
+                <a href="a">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <main> <!--Conceito de Div. Caixa principal-->
+        <div class="player">
+            <div class="container">
+                <iframe width="100%" height="750px" src="https://www.youtube.com/embed/9LexbARFO_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="filmeapresentado">
+            <div class="container"> <!--wreaper-->
+                <h3 class="tituloapresentado">SANTA TERESA DOS ANDES</h3>
+                <p class="descricao"> A emocionante história de Juanita Fernández, que aos dezoito anos entrou para a vida religiosa no Carmelo de Los Andes, no Chile, onde recebeu o nome de Teresa de Jesus. Jovem de saúde frágil, nada realizou de extraordinário. Em sua breve existência, conseguiu superar as dificuldades que a vida religiosa, no Carmelo, lhe apresentou. Após onze meses de uma vida de intensa oração e trabalho morreu de tifo, com apenas vinte anos de idade. Teresa de Jesus foi proclamada Santa pelo Papa João Paulo II no dia 21 de março de 1993.</p>
+                
+            </div>
+        </div> <!--escrever div.nomedaclasse. prrenche automaticamente-->
+        
+    </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme"> <!--Classe para chamar o carrosel, nome padrão do site. A classe é chamada no setup.js-->
+            <div class="item">
+                  <img class="box-filme" src="img/min1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min11.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/min10.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+   <!--Por boas práticas sempre declarar os scripts JS no fim do body. Primeiro se carrega os elemntos, após isso as funcionalidades descritas no js-->
+    <script src="https://kit.fontawesome.com/e7aae42f6b.js" crossorigin="anonymous"></script> <!--Link enviado pelo próprio site quando se usa algum icone. Caminhos dos ícones são diferentes-->
+    <!--Caminhos dos arquivos em JS para realizar o carrosel. Padrão do OWLCAROUSEL-->
+    <script src="js/owl/jquery.min.js"></script> 
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>
